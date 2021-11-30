@@ -1,11 +1,14 @@
-import 'package:aplikasi_presensi/login.dart';
+import 'package:flutter_absensi/login.dart';
 import 'package:flutter/material.dart';
 
+import 'login.dart';
+
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +19,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ), //Theme Data
-      home: Login(),
+      home: const Login(),
     ); //MaterialApp
   }
 }

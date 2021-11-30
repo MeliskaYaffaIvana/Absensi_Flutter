@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 
 class Launcher extends StatefulWidget {
+  const Launcher({Key? key}) : super(key: key);
+
   @override
   _LauncherState createState() => _LauncherState();
 }
 
-class _LauncherState extends State<Launcher>
-withn {
+class _LauncherState extends State<Launcher> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -16,20 +17,20 @@ withn {
         child: Stack(
           fit: StackFit.expand,
           children: <Widget>[
-            new Padding(
+            const Padding(
               padding: EdgeInsets.all(8.0),
             ),
-            new Image.asset(
+            Image.asset(
               'gambar/logo-absen.png',
-              width: animation.value * 200,
-              height: animation.value * 200,
+              width: 200,
+              height: 200,
             ),
-            new Padding(
+            const Padding(
               padding: EdgeInsets.all(8.0),
             ),
           ],
         ),
       ),
-    ),
+    );
   }
 }

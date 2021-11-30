@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class Login extends StatefulWidget {
+  const Login({Key? key}) : super(key: key);
+
   @override
   _LoginState createState() => _LoginState();
 }
@@ -10,10 +12,11 @@ class _LoginState extends State<Login> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Login'),
-        ),
+        title: const Text('Login'),
+      ),
       body: Container(
-        child: Center(
+        margin: const EdgeInsets.all(9),
+        child: const Center(
           child: Text('Ini halaman login'),
         ),
       ),
